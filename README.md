@@ -4,9 +4,9 @@ This repository contains the backend of my personal portfolio, built using **Spr
 
 ## Features
 - **Login functionality**: Users must log in with the username (`1234`) and password (`password`) to access the main page.
-- **Main page access control**: Users attempting to directly access the main page without logging in will be redirected to the login page with a warning message.
-- **Error handling**: If incorrect login credentials are entered, a warning message will appear.
-- **Logout functionality**: Users can log out by clicking the **Logout** button in the top-right corner of the main page, which will redirect them back to the login page.
+- **Main page access control**: Users attempting to directly access the main page (`/index`) without logging in will be redirected to the login page with a warning message.
+- **Error handling**: If incorrect login credentials are entered, a warning message will appear (`Login failed`).
+- **Logout functionality**: Users can log out by clicking the **Logout** red button in the top-right corner of the main page, which will redirect them back to the login page.
 
 ## Ongoing Updates
 This project is **actively being developed**. Future updates will include new features, bug fixes, and other improvements. Please check back often for the latest changes!
