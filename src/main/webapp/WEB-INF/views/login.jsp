@@ -12,20 +12,6 @@
             color: indianred;
         }
     </style>
-    <%--    <script>--%>
-    <%--        function validateLogin(event) {--%>
-    <%--            event.preventDefault();--%>
-
-    <%--            var username = document.getElementById("username").value;--%>
-    <%--            var password = document.getElementById("password").value;--%>
-
-    <%--            if (username === "1234" && password === "1234") {--%>
-    <%--                window.location.href = "./index";--%>
-    <%--            } else {--%>
-    <%--                alert("Login failed");--%>
-    <%--            }--%>
-    <%--        }--%>
-    <%--    </script>--%>
 </head>
 <body>
 <h1> This is a login page </h1>
