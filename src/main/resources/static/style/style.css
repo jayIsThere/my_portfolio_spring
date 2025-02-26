@@ -1,0 +1,98 @@
+body {
+    font-family: sans-serif;
+    background-color: #f4f4f4;
+    margin: 20px;
+}
+
+h1 {
+    color: white;
+    margin: 0;
+    font-size: 1.5em;
+}
+
+h2.welcomeName {
+    color: white;
+    margin: 0;
+    font-size: 1.0em;
+}
+
+.menu a.logout {
+    color: red;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+h3 {
+    color: #0056b3;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 15px;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+.zusammen {
+    white-space: nowrap;
+}
+
+.profilbild {
+    margin-left: 100px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #333;
+    padding: 10px 20px;
+}
+
+.menu ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    display: flex;
+}
+
+.menu li {
+    display: inline-block;
+}
+
+.menu a {
+    color: #FFFFFF;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.menu a:hover {
+    color: #FFD400;
+}
+
+.image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.image-gallery img {
+    width: calc(33.33% - 10px);
+    border-radius: 8px; /* Adds rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.small-image {
+    width: calc(50% - 10px);
+}
+
+@media print {
+    body {
+        margin: 20px;
+    }
+}
