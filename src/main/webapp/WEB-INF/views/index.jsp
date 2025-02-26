@@ -1,16 +1,3 @@
-<%@ page session="true" %>
-<%
-    if (session.getAttribute("username") == null) {
-%>
-<script>
-    alert("You need to login first");
-    window.location.href = "/login";
-</script>
-<%
-        return;
-    }
-%>
-
 <!DOCTYPE html>
 <html lang="de">
 <head>
