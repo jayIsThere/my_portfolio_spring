@@ -15,6 +15,8 @@
 </head>
 <body>
 <h1> This is a login page </h1>
+
+
 <% if (request.getParameter("error") != null) { %>
 <p style="color: red">Login failed</p>
 <% } %>

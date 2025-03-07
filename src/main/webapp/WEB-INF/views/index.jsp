@@ -1,4 +1,6 @@
 <!DOCTYPE html>
+<%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
+
 <html lang="de">
 <head>
     <meta charset="UTF-8">
@@ -11,14 +13,15 @@
     <h2 class="welcomeName">Welcome, <%= session.getAttribute("username") %>!</h2>
     <nav class="menu">
         <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="resume.html">About</a></li>
-            <li><a href="qualification.html">Job</a></li>
-            <li><a href="private.html">Life</a></li>
-            <li><a href="certificate.html">Certificate</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="feedback.html">Feedback</a></li>
+            <li><a href="/index">Home</a></li>
+            <li><a href="/resume">About</a></li>
+            <li><a href="/qualification">Job</a></li>
+            <li><a href="/private">Life</a></li>
+            <li><a href="/certificate">Certificate</a></li>
+            <li><a href="/contact">Contact</a></li>
+            <li><a href="/feedback">Feedback</a></li>
             <li><a href="auswertung.php">Feedback Table</a></li>
+            <li><a href="toDo.html">ToDo List</a></li>
             <li><a href="/logout" class="logout">Logout</a></li>
         </ul>
     </nav>

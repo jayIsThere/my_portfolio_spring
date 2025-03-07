@@ -4,10 +4,9 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
-public class IndexPageController {
-
-    @RequestMapping("/index")
+public class FeedbackPageController {
+    @RequestMapping("/feedback")
     public String mainPage() {
-        return "index";
+        return "feedback";
     }
 }
