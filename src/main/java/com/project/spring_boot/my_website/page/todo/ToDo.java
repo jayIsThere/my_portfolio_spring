@@ -10,6 +10,9 @@ public class ToDo {
     private LocalDate targetDate;
     private boolean isDone;
 
+    public ToDo() {
+        super();
+    }
     public ToDo(int id, String username, String description, LocalDate targetDate, boolean isDone) {
         super();
         this.id = id;

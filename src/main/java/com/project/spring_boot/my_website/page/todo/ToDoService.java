@@ -21,4 +21,10 @@ public class ToDoService {
                 .filter(todo -> todo.getUsername().equals(username))
                 .toList();
     }
+
+    public void addTodo(ToDo todo) {
+        int newId = todos.size() + 1;
+        todo.setId(newId);
+        todos.add(todo);
+    }
 }
