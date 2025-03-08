@@ -21,7 +21,7 @@
             <li><a href="/contact">Contact</a></li>
             <li><a href="/feedback">Feedback</a></li>
             <li><a href="auswertung.php">Feedback Table</a></li>
-            <li><a href="toDo.html">ToDo List</a></li>
+            <li><a href="/list-todos">ToDo List</a></li>
             <li><a href="/logout" class="logout">Logout</a></li>
         </ul>
     </nav>
