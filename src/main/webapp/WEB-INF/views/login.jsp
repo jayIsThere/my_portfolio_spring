@@ -11,10 +11,16 @@
         </div>
     </div>
 
-<pre>${errorMessage}</pre>
-<% if (request.getParameter("error") != null) { %>
-<p style="color: red">Login failed</p>
-<% } %>
+    <%
+        String errorMessage = (String) session.getAttribute("errorMessage");
+        if (errorMessage != null) {
+    %>
+    <p style="color: red; text-align: center"><%= errorMessage %></p>
+    <% session.removeAttribute("errorMessage"); %>
+    <%
+        }
+    %>
+
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-12 col-md-4">

@@ -1,7 +1,6 @@
 package com.project.spring_boot.my_website.config;
 
 import com.project.spring_boot.my_website.interceptor.AuthInterceptor;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
@@ -15,8 +14,12 @@ public class WebConfig implements WebMvcConfigurer {
         this.authInterceptor = authInterceptor;
     }
 
+
     @Override
     public void addInterceptors(InterceptorRegistry registry) {
-        registry.addInterceptor(authInterceptor).addPathPatterns("/index");
+        registry.addInterceptor(authInterceptor)
+                .addPathPatterns("/index")
+                .excludePathPatterns("/login", "/logout", "/", "");
     }
+
 }

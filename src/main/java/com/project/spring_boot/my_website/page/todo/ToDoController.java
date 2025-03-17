@@ -11,12 +11,14 @@ import java.util.List;
 @SessionAttributes("username")
 public class ToDoController {
 
+    // Inject the ToDoService
     private ToDoService toDoService;
-
     public ToDoController(ToDoService toDoService) {
         super();
         this.toDoService = toDoService;
     }
+
+    // List all todos for a specific user
     @RequestMapping("/list-todos")
     public String listAllTodos(ModelMap model) {
         String username = (String) model.get("username");
@@ -25,11 +27,13 @@ public class ToDoController {
         return "listTodos";
     }
 
+    // Show a todo page
     @GetMapping("/add-todo")
     public String showTodoPage() {
         return "todo";
     }
 
+    // Add a new todo
     @PostMapping("/add-todo")
     public String addTodoPage(@RequestParam("description") String description, ModelMap model) {
 
@@ -40,7 +44,7 @@ public class ToDoController {
         newTodo.setTargetDate(LocalDate.now());
         newTodo.setDone(false);
 
-        toDoService.addTodo(newTodo);
+        toDoService.addTodo(newTodo); // Add the new todo to the list of todos
         return "redirect:list-todos";
     }
 }

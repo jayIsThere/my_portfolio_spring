@@ -16,12 +16,14 @@ public class ToDoService {
         todos.add(new ToDo(3, "1234", "Hallo3", LocalDate.now().plusYears(3), false));
     }
 
+    // Get all todos for a specific user
     public List<ToDo> findByUserName(String username) {
         return todos.stream()
                 .filter(todo -> todo.getUsername().equals(username))
                 .toList();
     }
 
+    // Add a new todo
     public void addTodo(ToDo todo) {
         int newId = todos.size() + 1;
         todo.setId(newId);

@@ -19,6 +19,7 @@ public class AuthInterceptor implements HandlerInterceptor {
     public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception {
         HttpSession session = request.getSession();
         if (session.getAttribute("username") == null) {
+            // User not logged in, redirect to login page with alert
             response.setContentType("text/html;charset=UTF-8");
             response.getWriter().write("<script>alert('You need to login first'); window.location.href='/login';</script>");
             return false;
