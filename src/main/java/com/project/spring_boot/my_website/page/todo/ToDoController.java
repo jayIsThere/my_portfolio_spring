@@ -41,6 +41,13 @@ public class ToDoController {
         return "todo";
     }
 
+    @RequestMapping("/delete-todo")
+    public String deleteTodos(@RequestParam int id) {
+
+        toDoService.deleteById(id);
+        return "redirect:list-todos";
+    }
+
     // Add a new todo
     @PostMapping("/add-todo")
     public String addTodoPage(ModelMap model, @Valid @ModelAttribute("todo") ToDo todo, BindingResult result) { // what we are gonna fill in

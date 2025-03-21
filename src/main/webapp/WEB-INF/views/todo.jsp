@@ -44,8 +44,8 @@
 
         Description: <form:input type="text" path="description" required="required"/>
         <form:errors path="description" cssClass="text-warning"/><br>
-        Description: <form:input type="hidden" path="id"/><br>
-        Description: <form:input type="hidden" path="isDone"/><br>
+        <form:input type="hidden" path="id"/><br>
+        <form:input type="hidden" path="isDone"/><br>
 
         <input type="submit" class="btn btn-primary" value="Submit">
     </form:form>
